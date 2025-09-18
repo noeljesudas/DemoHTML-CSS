@@ -1,0 +1,261 @@
+/*
+ * GENERAL STYLING
+ * Sets the base font, background, and text color for a modern, attractive look.
+ * We'll use a deep space blue for the background to match the theme.
+ */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0d1a2f; /* Deep space blue */
+    color: #e0eaff; /* Light, ethereal blue-white for text */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * CONTAINER AND LAYOUT
+ * Using Flexbox for centering and a max-width to keep the content readable.
+ * This ensures the page looks good on all screen sizes.
+ */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/*
+ * HEADER STYLING
+ * Creates a prominent header with a glowing effect for the title.
+ */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #1a2b42; /* Slightly lighter space blue */
+    border-bottom: 2px solid #3d6092;
+}
+
+header h1 {
+    font-size: 3em;
+    color: #f0f8ff;
+    text-shadow: 0 0 10px #6fa8dc, 0 0 20px #6fa8dc; /* Adds a soft glow effect */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+header p {
+    font-style: italic;
+    color: #b3cde3;
+}
+
+/*
+ * NAVIGATION STYLING
+ * Creates a clean, horizontal navigation bar.
+ */
+nav p {
+    margin: 10px 0 0;
+}
+
+nav a {
+    color: #e0eaff;
+    text-decoration: none;
+    padding: 5px 15px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #6fa8dc;
+    border-radius: 5px;
+    text-shadow: 0 0 5px #f0f8ff;
+}
+
+/*
+ * SECTION STYLING
+ * Adds padding and margin to sections for better content separation.
+ */
+section {
+    padding: 40px 0;
+    border-bottom: 1px dashed #3d6092;
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #a0c2e8;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/*
+ * IMAGE AND CAPTION STYLING
+ * Center aligns the image and adds a clear caption.
+ */
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+figure img {
+    border: 3px solid #6fa8dc;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+figure img:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #92a8c3;
+}
+
+/*
+ * TABLE STYLING
+ * Uses a space-themed, clean design for the table.
+ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #1a2b42;
+    border: 1px solid #3d6092;
+}
+
+table caption {
+    padding: 10px;
+    font-weight: bold;
+    color: #f0f8ff;
+    background-color: #2a3b50;
+    border-bottom: 1px solid #3d6092;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #3d6092;
+}
+
+th {
+    background-color: #2a3b50;
+    color: #f0f8ff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #13213a; /* Alternate row color */
+}
+
+/*
+ * LISTS AND FORM STYLING
+ * Gives lists a clean, spaced-out look. Styles the form elements for a consistent theme.
+ */
+ul, ol {
+    margin: 20px auto;
+    padding-left: 20px;
+    max-width: 600px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+pre {
+    background-color: #0b1421;
+    border: 1px solid #3d6092;
+    padding: 20px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow-x: auto;
+    color: #7d96b3;
+}
+
+form {
+    background-color: #1a2b42;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #b3cde3;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #3d6092;
+    background-color: #0b1421;
+    color: #e0eaff;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #6fa8dc;
+    box-shadow: 0 0 5px #6fa8dc;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+input[type="submit"] {
+    background-color: #3d6092;
+    color: #f0f8ff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #6fa8dc;
+}
+
+/*
+ * FOOTER STYLING
+ * A simple, centered footer with a subtle link.
+ */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #92a8c3;
+    border-top: 1px solid #3d6092;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #b3cde3;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
